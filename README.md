@@ -1,3 +1,5 @@
+### This a public project, for it to work locally you will need to add your firebase key and your realtime database url
+
 # The main function
 
 #### The code is used to update the supermarket database with:
