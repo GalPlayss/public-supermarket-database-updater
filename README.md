@@ -1,4 +1,4 @@
-### This a public project, This code will not work locally, as it is designed to run on a vercel server.
+### This a public project, This code will not work locally, as it is designed to run on a vercel server, with libraries installed.
 
 # The main function
 
