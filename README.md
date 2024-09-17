@@ -1,4 +1,4 @@
-### This a public project, for it to work locally you will need to add your firebase key and your realtime database url
+### This a public project, This code will not work locally, as it is designed to run on a vercel server.
 
 # The main function
 
