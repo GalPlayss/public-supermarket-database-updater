@@ -133,7 +133,8 @@ export async function combinePrices(xmlStrings) {
                 "name":longest(item.ManufacturerItemDescription[0].trim(), item.ItemName[0].trim()),
                 "weighted":parseInt(item.bIsWeighted[0].trim()),
                 "measurementUnit":item.UnitOfMeasure[0].trim(), 
-                "quantity":parseInt(item.Quantity[0].trim()), 
+                "quantity":parseInt(item.Quantity[0].trim()),
+                "ManufacturerName":item.ManufacturerName, 
                 "price": parseFloat(item.bIsWeighted[0] === 0 ? item.UnitOfMeasurePrice[0] : item.ItemPrice[0]),
             }   
             if(combinedPrices[itemData.code] && exclude.every(name => itemData.name !== name)){ // if the item was already added by a previous supermarket
@@ -143,6 +144,7 @@ export async function combinePrices(xmlStrings) {
                     "name":itemData.name,
                     "weighted":itemData.weighted,
                     "quantity":itemData.quantity,
+                    "Manufacturer":itemData.ManufacturerName,
                     "measurementUnit":itemData.measurementUnit,
                     "prices":[{"brand":brand, "price":itemData.price}],
                 }
@@ -150,7 +152,7 @@ export async function combinePrices(xmlStrings) {
         }
     }
     console.log("ITEM COUNTER: " + Object.keys(combinedPrices).length)
-    combinedPrices = combineSameNames(combinedPrices)
+    //combinedPrices = combineSameNames(combinedPrices)
     console.log("ITEM COUNTER AFTER COMBINING: " + Object.keys(combinedPrices).length)
 
     return [combinedPrices, Object.keys(combinedPrices).length];
