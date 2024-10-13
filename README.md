@@ -11,7 +11,7 @@
 
 #### The supermarket included in this project are:
 
-Shufersal deal, Shufersal sheli, Shufersal Yesh hesed, Tiv taam, Rami Levi, Hazi Hinam, Stop market, Keshet teamim, Osherad, and am:pm
+Shufersal deal, Shufersal sheli, Shufersal Yesh hesed, Tiv taam, Rami Levi, Hazi Hinam, Stop market, Osherad, and am:pm
 
 
 # How does the code work?

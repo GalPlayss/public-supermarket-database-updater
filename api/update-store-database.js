@@ -14,7 +14,7 @@ export const config = {
 export default async function updatedatabase() {
   // Initialize SpeedInsights with example configuration
   let now = Date.now()
-  let msg = await manager.downloadStores(['TivTaam', 'RamiLevi', 'HaziHinam','Stop_Market','Keshet', 'osherad', 'doralon'])
+  let msg = await manager.downloadStores(['TivTaam', 'RamiLevi', 'HaziHinam','Stop_Market', 'osherad', 'doralon'])
   if(msg){
     const app = admin.initializeApp({
       credential: admin.credential.cert(serviceAccount),
