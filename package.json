@@ -1,0 +1,26 @@
+{
+  "repository": "https://github.com/vercel/examples.git",
+  "license": "MIT",
+  "private": true,
+  "type":"module",
+  "devDependencies": {
+    "@types/node": "^17.0.42",
+    "@vercel/node": "^2.9.6"
+  },
+  "dependencies": {
+    "@vercel/speed-insights": "^1.0.12",
+    "axios": "^1.7.7",
+    "axios-cookiejar-support": "^5.0.2",
+    "cheerio": "^1.0.0-rc.12",
+    "firebase": "^10.12.4",
+    "firebase-admin": "^12.4.0",
+    "iconv-lite": "^0.6.3",
+    "request": "^2.88.2",
+    "tough-cookie": "^4.1.4",
+    "typescript": "^5.5.4",
+    "xml2js": "^0.6.2"
+  },
+  "compilerOptions": {
+    "moduleResolution": "node"
+  }
+}
